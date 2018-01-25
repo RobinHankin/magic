@@ -34,6 +34,5 @@ arot(a, rights = 1,pair=1:2)
 \examples{
 a <- array(1:16,rep(2,4))
 arot(a)
-arot(a,c(1,3))
 }
 \keyword{array}
