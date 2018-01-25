@@ -1,6 +1,6 @@
 Package: magic
 Version: 1.5-8
-Date: 26 January 2018
+Date: 2018-01-26
 Title: Create and Investigate Magic Squares
 Author: Robin K. S. Hankin
 Depends: R (>= 2.10), abind
