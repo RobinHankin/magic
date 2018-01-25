@@ -19,3 +19,4 @@ Description: A collection of efficient, vectorized algorithms for the
 Maintainer: "Robin K. S. Hankin" <hankin.robin@gmail.com>
 License: GPL-2
 Packaged: 2011-03-28 07:46:56 UTC; rksh
+URL https://github.com/RobinHankin/magic.git
