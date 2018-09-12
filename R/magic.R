@@ -231,9 +231,11 @@ function (a, toroidal=FALSE, one_minus=FALSE)
 }
 
 "circulant" <-
-function (vec)
+function (vec,doseq=TRUE)
 {
-   if(length(vec)==1){vec <- seq(length=vec)}
+  if((length(vec)==1) & (doseq)){
+    vec <- seq(length=vec)
+  }
    n <- length(vec)
    a <- matrix(0,n,n)
    out <- process(1-row(a)+col(a),n)

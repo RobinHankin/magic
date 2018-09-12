@@ -6,13 +6,14 @@
 Creates and tests for circulant matrices of any order
 }
 \usage{
-circulant(vec)
+circulant(vec,doseq=TRUE)
 is.circulant(m,dir=rep(1,length(dim(m))))
 }
 \arguments{
-  \item{vec}{In \code{circulant()}, vector of elements of the first
-    row.  If of length one, interpret as the order of the matrix
-   and use \code{1:vec}.}
+  \item{vec,doseq}{In \code{circulant()}, vector of elements of the first
+    row.  If \code{vec} is of length one, and \code{doseq} is
+    \code{TRUE}, then interpret \code{vec} as the order of the matrix
+    and return a circulant with first row \code{seq_len(vec)}}
   \item{m}{In \code{is.circulant()}, matrix to be tested for
     circulantism}
   \item{dir}{In \code{is.circulant()}, the direction of the diagonal.
