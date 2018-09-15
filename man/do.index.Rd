@@ -20,9 +20,12 @@ Returns a matrix of the same dimensions as \code{a}
 \author{Robin K. S. Hankin, with improvements by  Gabor Grothendieck and
   Martin Maechler, via the R help list}
 \note{Tamas Papp suggests the one-liner
-\code{function(a, f, ...) {
-     array(apply(as.matrix(expand.grid(lapply(dim(a),seq_len),KEEP.OUT.ATTRS=FALSE)),1,f,
-...),dim(a))}} which is functionally identical to \code{do.index()}; but
+
+  \code{
+    function(a, f, ...){array(apply(as.matrix(expand.grid(lapply(dim(a),seq_len),KEEP.OUT.ATTRS=FALSE)),1,f,...),dim(a))}
+  }
+
+  which is functionally identical to \code{do.index()}; but
 it is no faster than the version implemented in the package, and (IMO)
 is harder to read.
 

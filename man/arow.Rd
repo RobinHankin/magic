@@ -22,6 +22,10 @@ being \eqn{n_i}{n_i}.
 This function is equivalent to, but faster than,
 \code{function(a,i){do.index(a,function(x){x[i]})}}.  However, it is
 much more complicated.
+
+The function is nominally the same as \code{slice.index()} but I have
+not checked all the edge cases.
+
 }     
 \examples{
 a <- array(0,c(3,3,2,2))

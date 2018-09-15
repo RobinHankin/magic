@@ -18,7 +18,7 @@ arev(a, swap = TRUE)
     If \code{swap} is of length one, recycle to \code{length(dim(a))}}
 }
 \details{
-  If \code{swap} is not Boolean, it is equivalent to \code{ 1:n \%in\%
+  If \code{swap} is not Boolean, it is equivalent to \code{1:n \%in\%
   swap} (where \code{n} is the number of dimensions).  Thus multiple
   entries are ignored, as are entries greater than \code{n}.
 
@@ -28,7 +28,7 @@ arev(a, swap = TRUE)
 
   Function \code{arev()} does not treat singleton dimensions specially,
   and is thus different from Octave's \code{flipdim()}, which (if
-  supplied with  no second argument) flips the first nonsingleton
+  supplied with no second argument) flips the first nonsingleton
   dimension.  To reproduce this, use \code{arev(a,fnsd(a))}.
 }
 \author{Robin K. S. Hankin}

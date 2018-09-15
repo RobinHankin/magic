@@ -2,7 +2,7 @@
 \alias{adiag}
 \title{Binds arrays corner-to-corner}
 \description{
-  Array generalization of blockdiag()
+  Array generalization of \code{blockdiag()}
 }
 \usage{
 adiag(... , pad=as.integer(0), do.dimnames=TRUE)
@@ -20,10 +20,10 @@ Binds any number of arrays together, corner-to-corner.  Because the
 function is associative provided \code{pad} is of length 1, this page
 discusses the two array case.
 
-If \code{x=adiag(a,b)} and \code{dim(a)=c(a_1,...,a_d)},
-\code{dim(b)=c(b_1,...,b_d)}; then \code{all(dim(x)==dim(a)+dim(b))} and
-\code{x[1:a_1,...,1:a_d]=a} and
-\code{x[(a_1+1):(a_1+b_1),...,(a_d+1):(a_d+b_d)]=b}.
+Suppose \code{x <- adiag(a,b)} and \code{dim(a)=c(a_1,...,a_d)},
+\code{dim(b)=c(b_1,...,b_d)}.  Then we have
+\code{all(dim(x)==dim(a)+dim(b))}; and \code{x[1:a_1,...,1:a_d]==a} and
+\code{x[(a_1+1):(a_1+b_1),...,(a_d+1):(a_d+b_d)]==b}.
 
 Dimnames are preserved, if both arrays have non-null dimnames, and
 \code{do.dimnames} is \code{TRUE}.

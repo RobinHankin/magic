@@ -34,14 +34,19 @@ aplus(...)
   See how \code{outa} and \code{outb} are the correct size and the
   appropriate elements of each are populated with \code{a} and \code{b}
   respectively.  Then the sum is returned.
-  
+
 }
 \author{Robin K. S. Hankin}
 \seealso{\code{\link{apad}}}
 \examples{
-a <- matrix(1:10,2,5)
-b <- matrix(1:9,3,3)
-aplus(a,b,b)
-  
+
+aplus(rbind(1:9),cbind(1:9))
+
+a <- matrix(1:8,2,4)
+b <- matrix(1:10,5,2)
+aplus(a*100,b,b)
+
+
+
 }
 \keyword{ array }

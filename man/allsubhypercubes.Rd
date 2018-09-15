@@ -11,8 +11,9 @@ allsubhypercubes(a)
   \item{a}{The magic hypercube whose subhypercubes are computed}
 }
 \value{
-  Returns a list, each element of which is a subhypercube.  Note that
-  major diagonals are also returned (as n-by-1 arrays).
+
+  Returns a list, each element of which is a subhypercube of \code{a}.
+  Note that major diagonals are also returned (as n-by-1 arrays).
 
   The names of the list are the extracted subhypercubes.  Consider
   \code{a <- magichypercube.4n(1,d=4)} (so n=4) and if \code{jj <-
