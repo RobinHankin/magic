@@ -1,8 +1,11 @@
 Package: magic
-Version: 1.5-9
+Version: 1.6-0
 Date: 2018-09-14
 Title: Create and Investigate Magic Squares
-Author: Robin K. S. Hankin
+Authors@R: c(person(c("Robin", "K. S. "), "Hankin", 
+    role=c("aut","cre"),
+    email="hankin.robin@gmail.com",
+		comment = c(ORCID = "0000-0001-5982-0415")))
 Depends: R (>= 2.10), abind
 Description: A collection of efficient, vectorized algorithms for the
  creation and investigation of magic squares and hypercubes, including
@@ -18,5 +21,4 @@ Description: A collection of efficient, vectorized algorithms for the
  was just for statistics".
 Maintainer: "Robin K. S. Hankin" <hankin.robin@gmail.com>
 License: GPL-2
-Packaged: 2011-03-28 07:46:56 UTC; rksh
 URL: https://github.com/RobinHankin/magic.git
