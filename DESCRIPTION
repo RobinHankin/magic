@@ -1,6 +1,5 @@
 Package: magic
 Version: 1.6-0
-Date: 2018-09-14
 Title: Create and Investigate Magic Squares
 Authors@R: c(person(c("Robin", "K. S. "), "Hankin", 
     role=c("aut","cre"),
