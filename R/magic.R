@@ -881,12 +881,9 @@ function (m)
 "magic.8" <-
 function (...) 
 {
-    j <- array(t(expand.grid(rep(list(0:1),16))),
-        c(4, 4, 65536))
-    all.rowsums.eq.2 <- apply(apply(j, c(1, 3), sum) == 2, 2, 
-        all)
-    all.colsums.eq.2 <- apply(apply(j, c(2, 3), sum) == 2, 2, 
-        all)
+    j <- array(t(expand.grid(rep(list(0:1),16))),c(4, 4, 65536))
+    all.rowsums.eq.2 <- apply(apply(j, c(1, 3), sum) == 2, 2, all)
+    all.colsums.eq.2 <- apply(apply(j, c(2, 3), sum) == 2, 2, all)
     both.sums.eq.2 <- all.rowsums.eq.2 & all.colsums.eq.2
     j <- j[c(1:4, 4:1), c(1:4, 4:1), both.sums.eq.2] > 0
     n <- dim(j)[3]
@@ -895,9 +892,7 @@ function (...)
         magics[j] <- rev(magics[j])
         return(magics)
     }
-    fun <- function(i) {
-        ref(magics[, , i], j[, , i])
-    }
+    fun <- function(i){ref(magics[,,i], j[,,i])}
     return(array(sapply(1:n, fun), c(8, 8, n)))
 }
 
