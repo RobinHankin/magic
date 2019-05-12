@@ -17,11 +17,10 @@ an 8-by-8 magic square.
 \references{\url{http://www.grogono.com/magic/index.php}}
 \author{Robin K. S. Hankin}
 \examples{
-\dontrun{
+
 h <- magic.8()
 h[,,1]
-is.magic(h[,,4])
-}
 
+stopifnot(apply(h,3,is.magic))
 }
 \keyword{array}
