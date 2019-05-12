@@ -881,9 +881,6 @@ function (m)
 "magic.8" <-
 function (...) 
 {
-    f <- function(...) {
-        0:1
-    }
     j <- array(t(expand.grid(rep(list(0:1),16))),
         c(4, 4, 65536))
     all.rowsums.eq.2 <- apply(apply(j, c(1, 3), sum) == 2, 2, 
