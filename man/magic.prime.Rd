@@ -13,11 +13,13 @@ magic.prime(n,i=2,j=3)
   \item{j}{column number of increment}
 }
 \details{
-Claimed to work for prime order, but I've tried it (with the defaults
-for \code{i} and \code{j}) for many composite integers of the
-form \eqn{6n+1}{6n+1} and \eqn{6n-1}{6n-1} and found no exceptions;
-indeed, they all seem to be panmagic.  It is not clear to me 
-when the process works and when it doesn't.  
+
+Claimed to work for order any prime \eqn{p} with \eqn{(p,ij)=1}, but
+I've tried it (with the defaults for \code{i} and \code{j}) for many
+composite integers of the form \eqn{6n+1}{6n+1} and \eqn{6n-1}{6n-1} and
+found no exceptions; indeed, they all seem to be panmagic.  It is not
+clear to me when the process works and when it doesn't.
+
 }
 \references{\url{http://www.magic-squares.de/general/general.html}}
 \author{Robin K. S. Hankin}
