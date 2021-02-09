@@ -28,7 +28,7 @@ bernhardssonB(n)
       n-queens problem for all \eqn{n}}.  \emph{SIGART Bull.}, 2(2):7
     \item Weisstein, Eric W. \dQuote{Queens Problem} From
     \emph{MathWorld--A Wolfram Web Resource}
-    \url{http://mathworld.wolfram.com/QueensProblem.html}
+    \url{https://mathworld.wolfram.com/QueensProblem.html}
     }
   }
 \author{Robin K. S. Hankin}

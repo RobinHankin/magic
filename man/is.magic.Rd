@@ -157,7 +157,7 @@ is.stam(m)
   Function \code{is.magic()} is vectorized; if a list is supplied, the
   defaults are assumed.
 }
-\references{\url{http://mathworld.wolfram.com/MagicSquare.html}}
+\references{\url{https://mathworld.wolfram.com/MagicSquare.html}}
 \author{Robin K. S. Hankin}
   
 \seealso{\code{\link{minmax}},\code{\link{is.perfect}},\code{\link{is.semimagichypercube}},\code{\link{sam}}}

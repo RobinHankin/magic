@@ -13,7 +13,7 @@ magic.4np2(m)
     for \eqn{m\geq 1}{m>=1}, using Conway's
     \dQuote{LUX} construction}
 }
-\references{\url{http://mathworld.wolfram.com/MagicSquare.html}}
+\references{\url{https://mathworld.wolfram.com/MagicSquare.html}}
 \author{Robin K. S. Hankin}
 \note{I am not entirely happy with the method used: it's too complicated}
 \seealso{\code{\link{magic}}}
