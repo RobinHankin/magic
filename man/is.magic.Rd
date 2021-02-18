@@ -104,7 +104,7 @@ is.stam(m)
     \item An \dfn{antimagic square} is one whose row sums and column
     sums are consecutive integers; a \dfn{totally antimagic square} is
     one whose row sums, column sums, and two unbroken diagonals are
-    consecutiveintegers.  Observe that an antimagic square is not
+    consecutive integers.  Observe that an antimagic square is not
     necessarily totally antimagic, and vice-versa.
 
     \item A \dfn{heterosquare} has all rowsums and column sums
