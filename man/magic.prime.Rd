@@ -21,7 +21,6 @@ found no exceptions; indeed, they all seem to be panmagic.  It is not
 clear to me when the process works and when it doesn't.
 
 }
-\references{\url{https://www.magic-squares.de/general/general.html}}
 \author{Robin K. S. Hankin}
 \examples{
 magic.prime(7)

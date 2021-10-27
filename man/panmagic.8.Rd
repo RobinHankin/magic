@@ -12,7 +12,7 @@ panmagic.8(chosen = 1:6, vals = 2^(0:5))
   \item{vals}{The values combined to produce the magic square.  Choosing
   \code{0:5} gives a normal magic square.}
 }
-\references{\url{http://www.grogono.com/magic/index.php}}
+\references{\url{https://www.grogono.com/magic/index.php}}
 \author{Robin K. S. Hankin}
 \note{
   Not all choices for \code{chosen} give normal magic squares.  There
