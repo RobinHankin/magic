@@ -50,4 +50,4 @@ Much of the package functionality is vectorised in array dimension.
 
 For more detail, see the package vignette
 
-`vignette("freealg")`
+`vignette("magic")`
