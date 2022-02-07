@@ -10,8 +10,6 @@ Manipulation of high-dimensional arrays in R with the magic package
 [![Total
 Downloads](https://cranlogs.r-pkg.org/badges/grand-total/magic)](https://CRAN.R-project.org/package=magic)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/magic)](https://cran.r-project.org/package=magic)
-[![Codecov test
-coverage](https://codecov.io/gh/RobinHankin/magic/branch/master/graph/badge.svg)](https://codecov.io/gh/RobinHankin/magic/branch/master)
 <!-- badges: end -->
 
 # Overview
@@ -52,4 +50,4 @@ Much of the package functionality is vectorised in array dimension.
 
 For more detail, see the package vignette
 
-`vignette("freealg")`
+`vignette("magic")`
