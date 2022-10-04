@@ -1,5 +1,6 @@
 \documentclass[nojss]{jss}  
 \usepackage{amssymb}
+\usepackage{wrapfig}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for jss.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,7 +38,7 @@ Robin K. S. Hankin\\
 AUT University\\
 Auckland\\
 New Zealand\\
-E-mail: \email{hankin.robin@gmail.com}\hfill\includegraphics[width=1in]{\Sexpr{system.file("help/figures/magic.png",package="magic")}}
+E-mail: \email{hankin.robin@gmail.com}
 }
 
 
@@ -45,42 +46,40 @@ E-mail: \email{hankin.robin@gmail.com}\hfill\includegraphics[width=1in]{\Sexpr{s
 
 \begin{document}
 
-\hfill\includegraphics[width=1in]{\Sexpr{system.file("help/figures/magic.png",package="magic")}}
-
-
 \section{Overview}
+\setlength{\intextsep}{0pt}
+\begin{wrapfigure}{r}{0.2\textwidth}
+  \begin{center}
+\includegraphics[width=1in]{\Sexpr{system.file("help/figures/magic.png",package="magic")}}
+  \end{center}
+\end{wrapfigure}
+
 Recreational mathematics is easier to recognize than define, but seems
 to be characterized by requiring a bare minimum of ``raw material'':
 complex notation is not needed, and problems are readily communicated
-to the general public.  
-
-This is not to say that all problems of recreational mathematics are
-trivial: one could argue that much number theory is recreational in
-nature; yet attempts to prove Fermat's Last Theorem, or the search for
-ever higher perfect numbers, have been the catalyst for the
-development of many fruitful new areas of mathematics.  
+to the general public.  This is not to say that all problems of
+recreational mathematics are trivial: one could argue that much number
+theory is recreational in nature; yet attempts to prove Fermat's Last
+Theorem, or the search for ever higher perfect numbers, have been the
+catalyst for the development of many fruitful new areas of
+mathematics.
 
 The study of magic squares is also an example of nontrivial
 recreational mathematics as the basic concept is simple to grasp---yet
 there remain unsolved problems in the field whose study has revealed
-deep mathematical truths.
+deep mathematical truths.  Here, I introduce the \pkg{magic} package,
+and show that \proglang{R} is an excellent environment for the
+creation and investigation of magic squares.  I also show that one's
+appreciation of magic squares may be enhanced through computer tools
+such as \proglang{R}, and that the act of translating `paper'
+algorithms of the literature into \proglang{R} idiom can lead to new
+insight.
 
-Here, I introduce the ``magic'' package, and show that \proglang{R} is an
-excellent environment for the creation and investigation of magic
-squares.  I also show that one's appreciation of magic squares may be
-enhanced through computer tools such as \proglang{R}, and that the act of
-translating `paper' algorithms of the literature into \proglang{R} idiom can
-lead to new insight.
-
-
-\section{Introduction}
-Magic squares have essentially zero practical use; their
-fascination---like much of pure mathematics---lies in the appeal of
-\ae sthetics and structure rather than immediate usefulness.
-
-The following definitions are almost universal:
-\begin{itemize}
-\item A {\em semimagic square} is one all of whose row sums equal all its
+\section{Introduction} Magic squares have essentially zero practical
+use; their fascination---like much of pure mathematics---lies in the
+appeal of \ae sthetics and structure rather than immediate usefulness.
+The following definitions are almost universal: \begin{itemize} \item
+A {\em semimagic square} is one all of whose row sums equal all its
 columnwise sums (i.e. the magic constant).
 
 \item A {\em magic square} is a semimagic square with the sum of both
@@ -150,10 +149,9 @@ hypercubes.
 
 A wide variety of algorithms exists for calculating magic squares.
 For a given order $n$, these algorithms generally depend on $n$
-modulo~4.
+modulo~4.  A typical paper algorithm for magic squares of order~$n=4m$
+would go as follows.
 
-A typical paper algorithm for magic squares of order~$n=4m$ would go as
-follows.
 \begin{quote}
 Algorithm 1:
 in a square of order~$4m$, shade the long major diagonal.  Then shade
