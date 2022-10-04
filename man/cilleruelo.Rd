@@ -33,13 +33,11 @@ Returns a \eqn{4\times 4}{4x4} matrix.
 
   Javier Cilleruelo and Florian Luca 2010, \dQuote{On multiplicative
 magic squares}, \emph{The Electronic Journal of Combinatorics} vol 17,
-number 8}
+number 8
 
 }
 
-\author{
-Robin K. S. Hankin
-}
+\author{Robin K. S. Hankin}
 \examples{
 is.magic(cilleruelo(5,6))
 is.magic(cilleruelo(5,6),func=prod)
