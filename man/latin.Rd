@@ -10,7 +10,9 @@
 \alias{rlatin}
 \title{Random latin squares}
 \description{
-  Various functionality for generating random latin squares
+  Various functionality for generating random latin squares.  Function
+  \code{latin()} itself is a synonym for \code{circulant()} and is
+  documented at \code{circulant.Rd}.
 }
 \usage{
 incidence(a)
@@ -30,6 +32,7 @@ rlatin(n,size=NULL,start=NULL,burnin=NULL)
 }
 \details{
   \itemize{
+    \item Function \code{latin()}, when called with a 
     \item Function \code{incidence()} takes an integer array
     (specifically, a latin square) and returns the incidence array as
     per Jacobson and Matthew 1996
@@ -64,6 +67,10 @@ rlatin(n,size=NULL,start=NULL,burnin=NULL)
     \eqn{n\times n}{n-by-n} latin square.
   }
 
+A \dfn{latin square} is an \eqn{n}-by-\eqn{n} matrix containing integers
+\eqn{1} to \eqn{n} arranged so each number occurs exactly once in each
+row and once in each column.
+  
 From Jacobson and Matthew 1996, an \eqn{n\times n}{n-by-n} latin square
 LS is equivalent to an \eqn{n\times n\times n}{n-by-n-by-n} array A with
 entries 0 or 1; the dimensions of A are identified with the rows,
@@ -83,7 +90,7 @@ sums must equal 1.
     Combinatorial Designs}, volume 4, No. 6, pp405--437
 }
 \author{Robin K. S. Hankin}
-\seealso{\code{\link{is.magic}}}
+\seealso{\code{\link{is.magic}},\code{\link{circulant}}}
 \examples{
 
 rlatin(5)

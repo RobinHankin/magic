@@ -40,11 +40,16 @@ is.circulant(m,dir=rep(1,length(dim(m))))
   A \dfn{Toeplitz} matrix is one in which \code{a[i,j]=a[i',j']}
   whenever \code{|i-j|=|i'-j'|}.  See function \code{toeplitz()} of the
   \code{stats} package for details.
+
+  If the elements of \code{vec} are distinct, \code{circulant()} will
+  return a latin square.  Function \code{latin()} is a synonym for
+  \code{circulant()}, see \code{latin.Rd}.
 }
 \references{Arthur T. Benjamin and K. Yasuda.  \emph{Magic
     \dQuote{Squares} Indeed!}, American Mathematical Monthly, vol
   106(2), pp152-156, Feb 1999}
 \author{Robin K. S. Hankin}
+\seealso{\code{\link{latin}}}
 \examples{
 circulant(5)
 circulant(2^(0:4))
