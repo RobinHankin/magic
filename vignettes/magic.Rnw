@@ -25,9 +25,7 @@ The \proglang{R} computer language~\citep{R} has been applied with a great deal
 of success to a wide variety of statistical, physical, and medical
 applications.  Here, I show that \proglang{R} is an equally superb research
 tool in the field of recreational mathematics.
-
-
-An earlier version of this vignette was published as~\citet{hankin2005}. 
+To cite the package in publications, please use~\citet{hankin2005}. 
 }
 
 \Keywords{Magic squares}
