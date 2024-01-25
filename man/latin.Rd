@@ -48,7 +48,7 @@ rlatin(n,size=NULL,start=NULL,burnin=NULL)
     \item Function \code{another_incidence()} takes an incidence array
     and returns a different incidence array
     \item Function \code{rlatin()} generates a (Markov) sequence of
-    random latin squres, arranged in a 3D array.  Argument \code{n}
+    random latin squares, arranged in a 3D array.  Argument \code{n}
     specifies how many to generate; argument \code{size} gives the size
     of latin squares generated; argument \code{start} gives the start
     latin square (it must be latin and is checked with
