@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/magic)](https://CRAN.R-project.org/package=magic)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/magic)](https://cran.r-project.org/package=magic)
+[![R-CMD-check](https://github.com/RobinHankin/magic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RobinHankin/magic/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # Overview

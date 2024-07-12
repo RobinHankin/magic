@@ -4,3 +4,4 @@ README.Rmd
 inst/magic_icon.png
 ^.github$
 ^.devcontainer$
+^\.github$
