@@ -16,7 +16,7 @@ on:
 
 env:
   # additional flags for `R CMD CHECK`
-  EXTRA_CHECK_FLAGS: "--no-manual --no-vignettes --ignore-vignettes"
+  EXTRA_CHECK_FLAGS: "--no-manual --no-vignettes --no-build-vignettes --ignore-vignettes"
   # additional environmental vars for `R CMD CHECK`
   # see manual here: https://rstudio.github.io/r-manuals/r-ints/Tools.html
   _R_CHECK_TESTS_NLINES_: 0
