@@ -1,5 +1,5 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
-# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
+# for debugging help, https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
     branches: [main, master]
@@ -30,8 +30,8 @@ jobs:
 
       - uses: r-lib/actions/setup-tinytex@v2
         run: |
-      	  tlmgr update --self
-      	  tlmgr install wrapfig
+          tlmgr update --self
+          tlmgr install wrapfig
 
       - uses: r-lib/actions/check-r-package@v2
         with:
