@@ -40,7 +40,7 @@ jobs:
   # Second job - by default, jobs will run in parallel, unless some dependencies
   # are introduced between them.
   build-and-check:
-    name: Build R package
+    name: Build the magic R package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
