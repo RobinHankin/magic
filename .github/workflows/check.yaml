@@ -29,7 +29,7 @@ jobs:
           echo "run_r_cmd_check=true" >> $GITHUB_OUTPUT
 
   r-cmd:
-    name: R CMD Check 🧬
+    name: R CMD (magic) Check 🧬
     needs: job-setup
     # Call a workflow from a given GitHub repository, from a given branch (or tag).
     uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@main
