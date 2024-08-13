@@ -33,9 +33,8 @@ To cite the package in publications, please use~\citet{hankin2005}.
 
 \Address{
 Robin K. S. Hankin\\
-AUT University\\
-Auckland\\
-New Zealand\\
+University of Stirling\\
+Scotland\\
 E-mail: \email{hankin.robin@gmail.com}
 }
 
