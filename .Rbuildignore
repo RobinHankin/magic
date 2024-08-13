@@ -5,3 +5,6 @@ inst/magic_icon.png
 ^.github$
 ^.devcontainer$
 ^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

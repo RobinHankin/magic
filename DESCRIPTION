@@ -10,5 +10,5 @@ Description: A collection of functions for the manipulation and
  high-dimensional magic hypercubes.
 Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
 License: GPL-2
-URL: https://github.com/RobinHankin/magic
+URL: https://github.com/RobinHankin/magic, https://robinhankin.github.io/magic/
 BugReports: https://github.com/RobinHankin/magic/issues
