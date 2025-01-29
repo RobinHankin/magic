@@ -41,7 +41,7 @@ is.alicehypercube(a,ndim,give.answers=FALSE, func=sum, boolean=FALSE)
     \item A \dfn{semimagic hypercube} has all \dQuote{rook's move} sums
     equal to the magic constant (that is, each \eqn{\sum
     a[i_1,i_2,\ldots,i_{r-1},,i_{r+1}, \ldots,i_d]}{sum(a[i_1,i_2,
-    \ldots,i_{r-1},,i_{r+1},\ldots,i_d])} with \eqn{1\leq r\leq d}{1 <=
+    \ldots,i_{r-1},,i_{r+1},\ldots,i_d])} with \eqn{1\leqslant r\leqslant d}{1 <=
     r <= d} is equal to the magic constant for all values of the
     \eqn{i}'s).  In \code{is.semimagichypercube()}, if
     \code{give.answers} is \code{TRUE}, the sums returned are in the
