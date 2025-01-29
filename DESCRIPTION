@@ -2,7 +2,7 @@ Package: magic
 Version: 1.6-1-1
 Title: Create and Investigate Magic Squares
 Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
-Depends: R (>= 2.10), abind
+Depends: R (>= 4.2), abind
 Description: A collection of functions for the manipulation and
  analysis of arbitrarily dimensioned arrays.  The original motivation
  for the package was the development of efficient, vectorized

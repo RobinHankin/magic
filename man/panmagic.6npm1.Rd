@@ -16,9 +16,9 @@ panmagic.4n(m)
 }
 \arguments{
   \item{m}{Function \code{panmagic.6np1(m)} returns a panmagic square of
-    order \eqn{n=6m+1} for \eqn{m\geq 1}{m>=1}, and function
+    order \eqn{n=6m+1} for \eqn{m\geqslant 1}{m>=1}, and function
     \code{panmagic.6nm1(m)} returns a panmagic square of order
-    \eqn{n=6m-1} for \eqn{m\geq 1}{m>=1}, using a classical method.
+    \eqn{n=6m-1} for \eqn{m\geqslant 1}{m>=1}, using a classical method.
 
     Function \code{panmagic.4n(m)} returns a magic square of order
   \eqn{n=4m}} \item{n}{Function \code{panmagic.6npm1(n)} returns a

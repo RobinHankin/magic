@@ -10,7 +10,7 @@ magic.4np2(m)
 }
 \arguments{
   \item{m}{returns a magic square of order \eqn{n=4m+2}
-    for \eqn{m\geq 1}{m>=1}, using Conway's
+    for \eqn{m\geqslant 1}{m>=1}, using Conway's
     \dQuote{LUX} construction}
 }
 \references{\url{https://mathworld.wolfram.com/MagicSquare.html}}
