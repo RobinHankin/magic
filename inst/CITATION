@@ -1,27 +1,16 @@
-citHeader("To cite in publications use:")
+citHeader("To cite the magic package in publications use:")
 
-citEntry(entry = "Article",
-	 title = {
-             paste("Recreational mathematics with R: introducing the
-	 'magic' package.")
-	     },
-	 author = personList(
-         person(given = c("Robin", "K. S."),
-		family = "Hankin",
-		email="hankin.robin@gmail.com")),
-	 journal = "R News",
-         year = "2005",
-	 month = "May",
-	 volume = "5",
-	 issue = "1",
-	 textVersion = {
-             paste("R. K. S. Hankin",
-                   "2005.",
-                   "Recreational mathematics with R: introducing the
-	 'magic' package",
-	     	   "R News",
-		   "5(1)"
-		   )
-         })
-
-
+bibentry(
+  bibtype  = "Article",
+  title    = "Recreational mathematics with R: introducing the 'magic' package",
+  author   = person("Robin K. S. Hankin"),
+  journal  = "R News",
+  year     = "2005",
+  volume   = "5",
+  number   = "1",
+  pages    = "48-51",
+  textVersion =
+  paste("Hankin, R. K. S. (2005).",
+        "Recreational mathematics with R: introducing the 'magic' package",
+        "R News, volume 5, number 1, pages 48-51")
+)
