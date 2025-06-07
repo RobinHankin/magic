@@ -47,7 +47,7 @@
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <p></p>
 <dl><dt id="arg-a-b-">a, b, ...<a class="anchor" aria-label="anchor" href="#arg-a-b-"></a></dt>
-<dd><p>Arrays to be binded together</p></dd>
+<dd><p>Arrays to be joined</p></dd>
 
   <dt id="arg-pad">pad<a class="anchor" aria-label="anchor" href="#arg-pad"></a></dt>
 <dd><p>Value to pad array with; note default keeps integer status
@@ -67,10 +67,14 @@
 Function <code>adiag()</code> binds any number of arrays together.  Because
 the function is associative provided <code>pad</code> is of length 1, this
 page discusses the two array case implemented by <code>adiag2()</code>.</p>
+<p>If the first argument is a list, it is interpreted as a list of arrays
+to be bound together.</p>
 <p>Suppose <code>x &lt;- adiag(a,b)</code> and <code>dim(a)=c(a_1,...,a_d)</code>,
 <code>dim(b)=c(b_1,...,b_d)</code>.  Then we have
 <code>all(dim(x)==dim(a)+dim(b))</code>; and <code>x[1:a_1,...,1:a_d]==a</code> and
 <code>x[(a_1+1):(a_1+b_1),...,(a_d+1):(a_d+b_d)]==b</code>.</p>
+
+
 <p>Dimnames are preserved, if both arrays have non-null dimnames, and
 <code>do.dimnames</code> is <code>TRUE</code>.</p>
 <p>Argument <code>pad</code> is usually a length-one vector, but any vector is
