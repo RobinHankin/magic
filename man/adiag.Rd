@@ -10,7 +10,7 @@ adiag(... , pad=as.integer(0), do.dimnames=TRUE)
 adiag2(a, b, pad=as.integer(0), do.dimnames=TRUE)
 }
 \arguments{
-  \item{a, b, ...}{Arrays to be binded together}
+  \item{a, b, ...}{Arrays to be joined}
   \item{pad}{Value to pad array with; note default keeps integer status
     of arrays}
   \item{do.dimnames}{Boolean, with default \code{TRUE} meaning to return
@@ -24,10 +24,15 @@ Function \code{adiag()} binds any number of arrays together.  Because
 the function is associative provided \code{pad} is of length 1, this
 page discusses the two array case implemented by \code{adiag2()}.
 
+If the first argument is a list, it is interpreted as a list of arrays
+to be bound together.
+
 Suppose \code{x <- adiag(a,b)} and \code{dim(a)=c(a_1,...,a_d)},
 \code{dim(b)=c(b_1,...,b_d)}.  Then we have
 \code{all(dim(x)==dim(a)+dim(b))}; and \code{x[1:a_1,...,1:a_d]==a} and
 \code{x[(a_1+1):(a_1+b_1),...,(a_d+1):(a_d+b_d)]==b}.
+
+
 
 Dimnames are preserved, if both arrays have non-null dimnames, and
 \code{do.dimnames} is \code{TRUE}.

@@ -36,7 +36,11 @@ function (..., pad = as.integer(0), do.dimnames = TRUE)
 {
     args <- list(...)
     if (length(args) == 1) {
-        return(args[[1]])
+        if(is.list(args)){
+            return(do.call("Recall", c(args[[1]], list(pad=pad,do.dimnames=do.dimnames))))
+        } else {
+            return(args[[1]])
+        }
     } else if (length(args) == 2){
         return(adiag2(args[[1]], args[[2]], pad=pad, do.dimnames=do.dimnames))
     } else {  # length(args) > 2
