@@ -1,14 +1,16 @@
 \name{adiag}
 \alias{adiag}
+\alias{adiag2}
 \title{Binds arrays corner-to-corner}
 \description{
   Array generalization of \code{blockdiag()}
 }
 \usage{
 adiag(... , pad=as.integer(0), do.dimnames=TRUE)
+adiag2(a, b, pad=as.integer(0), do.dimnames=TRUE)
 }
 \arguments{
-  \item{...}{Arrays to be binded together}
+  \item{a, b, ...}{Arrays to be binded together}
   \item{pad}{Value to pad array with; note default keeps integer status
     of arrays}
   \item{do.dimnames}{Boolean, with default \code{TRUE} meaning to return
@@ -16,9 +18,11 @@ adiag(... , pad=as.integer(0), do.dimnames=TRUE)
     issue}
 }
 \details{
-Binds any number of arrays together, corner-to-corner.  Because the
-function is associative provided \code{pad} is of length 1, this page
-discusses the two array case.
+
+Function \code{adiag2()} binds two arrays together, corner-to-corner.
+Function \code{adiag()} binds any number of arrays together.  Because
+the function is associative provided \code{pad} is of length 1, this
+page discusses the two array case implemented by \code{adiag2()}.
 
 Suppose \code{x <- adiag(a,b)} and \code{dim(a)=c(a_1,...,a_d)},
 \code{dim(b)=c(b_1,...,b_d)}.  Then we have
