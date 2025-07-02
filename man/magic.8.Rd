@@ -11,7 +11,7 @@ magic.8(...)
   \item{\dots}{ignored}
 }
 \value{
-Returns an array of dimensions \code{c(8,8,90)} of which each slice is
+Returns an array of dimensions \code{c(8, 8, 90)} of which each slice is
 an 8-by-8 magic square.
 }
 \references{\url{https://www.grogono.com/magic/index.php}}

@@ -8,8 +8,8 @@
   Frenicle's standard form
 }
 \usage{
-as.standard(a, toroidal = FALSE, one_minus=FALSE)
-is.standard(a, toroidal = FALSE, one_minus=FALSE)
+as.standard(a, toroidal = FALSE, one_minus = FALSE)
+is.standard(a, toroidal = FALSE, one_minus = FALSE)
 }
 \arguments{
   \item{a}{Magic square or hypercube (array) to be tested or

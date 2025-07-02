@@ -6,18 +6,18 @@
   Gray and MacDougall's method.
 }
 \usage{
-sam(m, u, A=NULL, B=A)
+sam(m, u, A = NULL, B = A)
 }
 \arguments{
   \item{m}{Order of the magic square (not \dQuote{\code{n}}: the
     terminology follows Gray and MacDougall)}
   \item{u}{See details section}
-  \item{A,B}{Start latin squares, with default \code{NULL} meaning to
+  \item{A, B}{Start latin squares, with default \code{NULL} meaning to
     use \code{circulant(m)}}
 }
 \details{
-  In Gray's terminology, \code{sam(m,n)} produces a
-  \eqn{SAM(2m,2u+1,0)}.
+  In Gray's terminology, \code{sam(m, n)} produces a
+  \eqn{SAM(2m, 2u+1, 0)}.
 
   The method is not vectorized.
 
@@ -39,9 +39,9 @@ jj <- matrix(c(
      3, 5, 4, 1, 2,
      2, 3, 1, 5, 4,
      4, 1, 2, 3, 5, 
-     1, 4, 5, 2, 3),5,5)
+     1, 4, 5, 2, 3), 5, 5)
 
-is.sam(sam(5,2,B=jj))
+is.sam(sam(5, 2, B = jj))
 
 }
 \keyword{array}

@@ -10,7 +10,7 @@ panmagic.4(vals = 2^(0:3))
 \arguments{
   \item{vals}{a length four vector giving the values which are combined
     in each of the \eqn{2^4}{2^4} possible ways.  Thus
-    \code{vals=2^sample(0:3)} always gives a normal square
+    \code{vals = 2^sample(0:3)} always gives a normal square
     (0-15 in binary).}
 }
 

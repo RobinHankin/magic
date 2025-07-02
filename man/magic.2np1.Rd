@@ -5,11 +5,11 @@
   Function to create magic squares of odd order 
 }
 \usage{
-magic.2np1(m, ord.vec = c(-1, 1), break.vec = c(1, 0), start.point=NULL)
+magic.2np1(m, ord.vec = c(-1, 1), break.vec = c(1, 0), start.point = NULL)
 }
 \arguments{
   \item{m}{creates a magic square of order \eqn{n=2m+1}}
-  \item{ord.vec}{ordinary vector.  Default value of \code{c(-1,1) }
+  \item{ord.vec}{ordinary vector.  Default value of \code{c(-1,1)}
     corresponds to the usual northeast direction}
   \item{break.vec}{break vector.  Default of \code{c(1,0)} corresponds to the
     usual south direction}
