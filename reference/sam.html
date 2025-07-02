@@ -42,7 +42,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">sam</span><span class="op">(</span><span class="va">m</span>, <span class="va">u</span>, A<span class="op">=</span><span class="cn">NULL</span>, B<span class="op">=</span><span class="va">A</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">sam</span><span class="op">(</span><span class="va">m</span>, <span class="va">u</span>, A <span class="op">=</span> <span class="cn">NULL</span>, B <span class="op">=</span> <span class="va">A</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -55,15 +55,15 @@
   <dt id="arg-u">u<a class="anchor" aria-label="anchor" href="#arg-u"></a></dt>
 <dd><p>See details section</p></dd>
 
-  <dt id="arg-a-b">A,B<a class="anchor" aria-label="anchor" href="#arg-a-b"></a></dt>
+  <dt id="arg-a-b">A, B<a class="anchor" aria-label="anchor" href="#arg-a-b"></a></dt>
 <dd><p>Start latin squares, with default <code>NULL</code> meaning to
     use <code>circulant(m)</code></p></dd>
 
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>In Gray's terminology, <code>sam(m,n)</code> produces a
-  \(SAM(2m,2u+1,0)\).</p>
+    <p>In Gray's terminology, <code>sam(m, n)</code> produces a
+  \(SAM(2m, 2u+1, 0)\).</p>
 <p>The method is not vectorized.</p>
 <p>To test for these properties, use functions such as
   <code><a href="is.magic.html">is.antimagic()</a></code>, documented under <code>is.magic.Rd</code>.</p>
@@ -105,9 +105,9 @@
 <span class="r-in"><span>     <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">4</span>, <span class="fl">1</span>, <span class="fl">2</span>,</span></span>
 <span class="r-in"><span>     <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">4</span>,</span></span>
 <span class="r-in"><span>     <span class="fl">4</span>, <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, </span></span>
-<span class="r-in"><span>     <span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span>,<span class="fl">5</span>,<span class="fl">5</span><span class="op">)</span></span></span>
+<span class="r-in"><span>     <span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span>, <span class="fl">5</span>, <span class="fl">5</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu"><a href="is.magic.html">is.sam</a></span><span class="op">(</span><span class="fu">sam</span><span class="op">(</span><span class="fl">5</span>,<span class="fl">2</span>,B<span class="op">=</span><span class="va">jj</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="is.magic.html">is.sam</a></span><span class="op">(</span><span class="fu">sam</span><span class="op">(</span><span class="fl">5</span>, <span class="fl">2</span>, B <span class="op">=</span> <span class="va">jj</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
