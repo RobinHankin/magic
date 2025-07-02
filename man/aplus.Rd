@@ -24,11 +24,11 @@ aplus(...)
   following \strong{pseudo}code:
 
   \itemize{
-    \item \code{outa <- array(0,pmax(a,b))}
-    \item \code{outb <- array(0,pmax(a,b))}
+    \item \code{outa <- array(0, pmax(a,b))}
+    \item \code{outb <- array(0, pmax(a,b))}
     \item \code{outa[1:dim(a)] <- a}
     \item \code{outb[1:dim(a)] <- b}
-    \item \code{return(outa+outb)}
+    \item \code{return(outa + outb)}
   }
 
   See how \code{outa} and \code{outb} are the correct size and the

@@ -5,7 +5,7 @@
 Returns the sums of submatrices of an array; multidimensional moving
 window averaging}
   \usage{
-subsums(a,p,func="sum",wrap=TRUE, pad=0)
+subsums(a, p, func = "sum", wrap = TRUE, pad = 0)
 }
 \arguments{
   \item{a}{Array to be analysed}
@@ -27,24 +27,24 @@ subsums(a,p,func="sum",wrap=TRUE, pad=0)
     \code{prod}, or \code{max}.  
 
     If \code{sum=""}, return the array of dimension
-    \code{c(dim(a),prod(p))} where each hyperplane is a shifted version
+    \code{c(dim(a), prod(p))} where each hyperplane is a shifted version
     of \code{a}.}
   \item{wrap}{Boolean, with default value of \code{TRUE} meaning to view
     array \code{a} as a n-dimensional torus.  Thus, if
-    \code{x=subsums(a,p,wrap=TRUE)}, and if \code{dim(a)=c(a_1,...,a_d)}
-    then \code{x[a_1,...,a_d]} is the sum of all corner elements of
+    \code{x=subsums(a, p, wrap=TRUE)}, and if \code{dim(a) = c(a_1, ..., a_d)}
+    then \code{x[a_1, ..., a_d]} is the sum of all corner elements of
     \code{a}.
 
     If \code{FALSE}, do not wrap \code{a} and return an array of
-    dimension \code{dim(a)+p-1}.}
+    dimension \code{dim(a) + p - 1}.}
   \item{pad}{If \code{wrap} is \code{TRUE}, \code{pad} is
     the value used   to pad the array with.  Use a \dQuote{neutral} value here;
     for example, if \code{func=sum}, then use 0; if \code{max}, use
     \eqn{-\infty}{-Inf}.}
 }
 \details{
-  The offset is specified so that \code{allsums(a,v)[1,1,...,1]=
-    sum(a[1:v[1],1:v[2],...,1:v[n]])}, where \code{n=length(dim(a))}.
+  The offset is specified so that \code{allsums(a, v)[1, 1, ..., 1] =
+    sum(a[1:v[1], 1:v[2], ..., 1:v[n]])}, where \code{n = length(dim(a))}.
 
   Function \code{subsums()} is used in \code{is.2x2.correct()} and
   \code{is.diagonally.correct()}. 
