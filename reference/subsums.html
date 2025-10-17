@@ -42,7 +42,7 @@ window averaging</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">subsums</span><span class="op">(</span><span class="va">a</span>,<span class="va">p</span>,func<span class="op">=</span><span class="st">"sum"</span>,wrap<span class="op">=</span><span class="cn">TRUE</span>, pad<span class="op">=</span><span class="fl">0</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">subsums</span><span class="op">(</span><span class="va">a</span>, <span class="va">p</span>, func <span class="op">=</span> <span class="st">"sum"</span>, wrap <span class="op">=</span> <span class="cn">TRUE</span>, pad <span class="op">=</span> <span class="fl">0</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -69,17 +69,17 @@ window averaging</p>
     <code><a href="is.magic.html">is.2x2.correct()</a></code>;  other choices might be <code>mean</code>,
     <code>prod</code>, or <code>max</code>.</p>
 <p>If <code>sum=""</code>, return the array of dimension
-    <code>c(dim(a),prod(p))</code> where each hyperplane is a shifted version
+    <code>c(dim(a), prod(p))</code> where each hyperplane is a shifted version
     of <code>a</code>.</p></dd>
 
   <dt id="arg-wrap">wrap<a class="anchor" aria-label="anchor" href="#arg-wrap"></a></dt>
 <dd><p>Boolean, with default value of <code>TRUE</code> meaning to view
     array <code>a</code> as a n-dimensional torus.  Thus, if
-    <code>x=subsums(a,p,wrap=TRUE)</code>, and if <code>dim(a)=c(a_1,...,a_d)</code>
-    then <code>x[a_1,...,a_d]</code> is the sum of all corner elements of
+    <code>x=subsums(a, p, wrap=TRUE)</code>, and if <code>dim(a) = c(a_1, ..., a_d)</code>
+    then <code>x[a_1, ..., a_d]</code> is the sum of all corner elements of
     <code>a</code>.</p>
 <p>If <code>FALSE</code>, do not wrap <code>a</code> and return an array of
-    dimension <code>dim(a)+p-1</code>.</p></dd>
+    dimension <code>dim(a) + p - 1</code>.</p></dd>
 
   <dt id="arg-pad">pad<a class="anchor" aria-label="anchor" href="#arg-pad"></a></dt>
 <dd><p>If <code>wrap</code> is <code>TRUE</code>, <code>pad</code> is
@@ -90,8 +90,8 @@ window averaging</p>
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>The offset is specified so that <code>allsums(a,v)[1,1,...,1]=
-    sum(a[1:v[1],1:v[2],...,1:v[n]])</code>, where <code>n=length(dim(a))</code>.</p>
+    <p>The offset is specified so that <code>allsums(a, v)[1, 1, ..., 1] =
+    sum(a[1:v[1], 1:v[2], ..., 1:v[n]])</code>, where <code>n = length(dim(a))</code>.</p>
 <p>Function <code>subsums()</code> is used in <code><a href="is.magic.html">is.2x2.correct()</a></code> and
   <code><a href="is.magichypercube.html">is.diagonally.correct()</a></code>.</p>
     </div>

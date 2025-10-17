@@ -73,11 +73,11 @@ Given two arrays a and b with
   associative).</p>
 <p>The operation of <code>aplus()</code> is understandable by examining the
   following <strong>pseudo</strong>code:</p>
-<p></p><ul><li><p><code>outa &lt;- array(0,pmax(a,b))</code></p></li>
-<li><p><code>outb &lt;- array(0,pmax(a,b))</code></p></li>
+<p></p><ul><li><p><code>outa &lt;- array(0, pmax(a,b))</code></p></li>
+<li><p><code>outb &lt;- array(0, pmax(a,b))</code></p></li>
 <li><p><code>outa[1:dim(a)] &lt;- a</code></p></li>
 <li><p><code>outb[1:dim(a)] &lt;- b</code></p></li>
-<li><p><code>return(outa+outb)</code></p></li>
+<li><p><code>return(outa + outb)</code></p></li>
 </ul><p>See how <code>outa</code> and <code>outb</code> are the correct size and the
   appropriate elements of each are populated with <code>a</code> and <code>b</code>
   respectively.  Then the sum is returned.</p>
