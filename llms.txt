@@ -1,0 +1,235 @@
+# Manipulation of high-dimensional arrays in R with the magic package
+
+![](reference/figures/magic.png)
+
+# Overview
+
+The magic package implements functionality for manipulating
+high-dimensional arrays using efficient vectorised methods. The original
+application was high-dimensional magic hypercubes. This README shows
+some of the more useful functions in the package.
+
+# Installation
+
+You can install the released version of `magic` from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+# install.packages("magic")  # uncomment this to install the package
+library("magic")
+```
+
+# Package highlights
+
+- Function
+  [`adiag()`](https://robinhankin.github.io/magic/reference/adiag.md)
+  binds arbitrarily-dimensioned arrays corner-to-corner
+- Function
+  [`apad()`](https://robinhankin.github.io/magic/reference/apad.md) pads
+  arbitrarily-dimensioned arrays
+- Function
+  [`apldrop()`](https://robinhankin.github.io/magic/reference/apl.md) is
+  a replacement for APL’s drop
+- Function
+  [`aplus()`](https://robinhankin.github.io/magic/reference/aplus.md)
+  superimposes two arrays of different dimensions and returns the sum of
+  overlapping elements
+- Function
+  [`arev()`](https://robinhankin.github.io/magic/reference/arev.md) is a
+  multidimensional generalization of
+  [`rev()`](https://rdrr.io/r/base/rev.html)
+- Function
+  [`arot()`](https://robinhankin.github.io/magic/reference/arot.md) is a
+  generalization of matlab’s `rotdim`
+- Function
+  [`fnsd()`](https://robinhankin.github.io/magic/reference/fnsd.md)
+  returns the first nonsingleton dimension of an arbitrary dimensioned
+  array
+- Function
+  [`ashift()`](https://robinhankin.github.io/magic/reference/shift.md)
+  shifts the origin of arbitrary dimensioned arrays
+
+Much of the package functionality is vectorised in array dimension.
+
+# Further information
+
+For more detail, see the package vignette
+
+`vignette("magic")`
+
+# Package index
+
+## All functions
+
+- [`Frankenstein`](https://robinhankin.github.io/magic/reference/Frankenstein.md)
+  : A perfect magic cube due to Frankenstein
+- [`Ollerenshaw`](https://robinhankin.github.io/magic/reference/Ollerenshaw.md)
+  : A most perfect square due to Ollerenshaw
+- [`adiag()`](https://robinhankin.github.io/magic/reference/adiag.md)
+  [`adiag2()`](https://robinhankin.github.io/magic/reference/adiag.md) :
+  Binds arrays corner-to-corner
+- [`allsubhypercubes()`](https://robinhankin.github.io/magic/reference/allsubhypercubes.md)
+  : Subhypercubes of magic hypercubes
+- [`allsums()`](https://robinhankin.github.io/magic/reference/allsums.md)
+  : Row, column, and two diagonal sums of arrays
+- [`apad()`](https://robinhankin.github.io/magic/reference/apad.md) :
+  Pad arrays
+- [`apldrop()`](https://robinhankin.github.io/magic/reference/apl.md)
+  [`` `apldrop<-`() ``](https://robinhankin.github.io/magic/reference/apl.md)
+  [`apltake()`](https://robinhankin.github.io/magic/reference/apl.md)
+  [`` `apltake<-`() ``](https://robinhankin.github.io/magic/reference/apl.md)
+  : Replacements for APL functions take and drop
+- [`aplus()`](https://robinhankin.github.io/magic/reference/aplus.md) :
+  Generalized array addition
+- [`arev()`](https://robinhankin.github.io/magic/reference/arev.md) :
+  Reverses some dimensions; a generalization of rev
+- [`arot()`](https://robinhankin.github.io/magic/reference/arot.md) :
+  Rotates an array about two specified dimensions
+- [`arow()`](https://robinhankin.github.io/magic/reference/arow.md) :
+  Generalized row and col
+- [`as.standard()`](https://robinhankin.github.io/magic/reference/as.standard.md)
+  [`is.standard()`](https://robinhankin.github.io/magic/reference/as.standard.md)
+  : Standard form for magic squares
+- [`cilleruelo()`](https://robinhankin.github.io/magic/reference/cilleruelo.md)
+  : A class of multiplicative magic squares due to Cilleruelo and Luca
+- [`circulant()`](https://robinhankin.github.io/magic/reference/circulant.md)
+  [`is.circulant()`](https://robinhankin.github.io/magic/reference/circulant.md)
+  : Circulant matrices of any order
+- [`cube2`](https://robinhankin.github.io/magic/reference/cube2.md) : A
+  pantriagonal magic cube
+- [`diag.off()`](https://robinhankin.github.io/magic/reference/diag.off.md)
+  : Extracts broken diagonals
+- [`do.index()`](https://robinhankin.github.io/magic/reference/do.index.md)
+  : Apply a function to array element indices
+- [`eq()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`ne()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`gt()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`lt()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`ge()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`le()`](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%eq%` ``](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%ne%` ``](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%gt%` ``](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%lt%` ``](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%ge%` ``](https://robinhankin.github.io/magic/reference/eq.md)
+  [`` `%le%` ``](https://robinhankin.github.io/magic/reference/eq.md) :
+  Comparison of two magic squares
+- [`fnsd()`](https://robinhankin.github.io/magic/reference/fnsd.md) :
+  First non-singleton dimension
+- [`force.integer()`](https://robinhankin.github.io/magic/reference/force.integer.md)
+  : Integerize array elements
+- [`sylvester()`](https://robinhankin.github.io/magic/reference/hadamard.md)
+  [`is.hadamard()`](https://robinhankin.github.io/magic/reference/hadamard.md)
+  : Hadamard matrices
+- [`hendricks`](https://robinhankin.github.io/magic/reference/hendricks.md)
+  : A perfect magic cube due to Hendricks
+- [`hudson()`](https://robinhankin.github.io/magic/reference/hudson.md)
+  : Pandiagonal magic squares due to Hudson
+- [`is.magic()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.panmagic()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.pandiagonal()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.semimagic()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.semimagic.default()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.associative()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.normal()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.sparse()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.mostperfect()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.2x2.correct()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.bree.correct()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.latin()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.antimagic()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.totally.antimagic()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.heterosquare()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.totally.heterosquare()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.sam()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  [`is.stam()`](https://robinhankin.github.io/magic/reference/is.magic.md)
+  : Various tests for the magicness of a square
+- [`is.semimagichypercube()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  [`is.diagonally.correct()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  [`is.magichypercube()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  [`is.perfect()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  [`is.latinhypercube()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  [`is.alicehypercube()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
+  : magic hypercubes
+- [`is.ok()`](https://robinhankin.github.io/magic/reference/is.ok.md) :
+  does a vector have the sum required to be a row or column of a magic
+  square?
+- [`is.square.palindromic()`](https://robinhankin.github.io/magic/reference/is.square.palindromic.md)
+  [`is.centrosymmetric()`](https://robinhankin.github.io/magic/reference/is.square.palindromic.md)
+  [`is.persymmetric()`](https://robinhankin.github.io/magic/reference/is.square.palindromic.md)
+  : Is a square matrix square palindromic?
+- [`incidence()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`is.incidence()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`is.incidence.improper()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`unincidence()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`inc_to_inc()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`another_latin()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`another_incidence()`](https://robinhankin.github.io/magic/reference/latin.md)
+  [`rlatin()`](https://robinhankin.github.io/magic/reference/latin.md) :
+  Random latin squares
+- [`lozenge()`](https://robinhankin.github.io/magic/reference/lozenge.md)
+  : Conway's lozenge algorithm for magic squares
+- [`magic-package`](https://robinhankin.github.io/magic/reference/magic-package.md)
+  : Create and Investigate Magic Squares
+- [`magic.2np1()`](https://robinhankin.github.io/magic/reference/magic.2np1.md)
+  : Magic squares of odd order
+- [`magic.4n()`](https://robinhankin.github.io/magic/reference/magic.4n.md)
+  : Magic squares of order 4n
+- [`magic.4np2()`](https://robinhankin.github.io/magic/reference/magic.4np2.md)
+  : Magic squares of order 4n+2
+- [`magic.8()`](https://robinhankin.github.io/magic/reference/magic.8.md)
+  : Regular magic squares of order 8
+- [`magic()`](https://robinhankin.github.io/magic/reference/magic.md) :
+  Creates magic squares
+- [`magic.constant()`](https://robinhankin.github.io/magic/reference/magic.constant.md)
+  : Magic constant of a magic square or hypercube
+- [`magic.prime()`](https://robinhankin.github.io/magic/reference/magic.prime.md)
+  : Magic squares prime order
+- [`magic.product()`](https://robinhankin.github.io/magic/reference/magic.product.md)
+  [`magic.product.fast()`](https://robinhankin.github.io/magic/reference/magic.product.md)
+  : Product of two magic squares
+- [`magiccube.2np1()`](https://robinhankin.github.io/magic/reference/magiccube.2np1.md)
+  : Magic cubes of order 2n+1
+- [`magiccubes`](https://robinhankin.github.io/magic/reference/magiccubes.md)
+  : Magic cubes of order 3
+- [`magichypercube.4n()`](https://robinhankin.github.io/magic/reference/magichypercube.4n.md)
+  : Magic hypercubes of order 4n
+- [`magicplot()`](https://robinhankin.github.io/magic/reference/magicplot.md)
+  : Joins consecutive numbers of a magic square.
+- [`minmax()`](https://robinhankin.github.io/magic/reference/minmax.md)
+  : are all elements of a vector identical?
+- [`notmagic.2n()`](https://robinhankin.github.io/magic/reference/notmagic.2n.md)
+  : An unmagic square
+- [`bernhardsson()`](https://robinhankin.github.io/magic/reference/nqueens.md)
+  [`bernhardssonA()`](https://robinhankin.github.io/magic/reference/nqueens.md)
+  [`bernhardssonB()`](https://robinhankin.github.io/magic/reference/nqueens.md)
+  : N queens problem
+- [`panmagic.4()`](https://robinhankin.github.io/magic/reference/panmagic.4.md)
+  : Panmagic squares of order 4
+- [`panmagic.6npm1()`](https://robinhankin.github.io/magic/reference/panmagic.6npm1.md)
+  [`panmagic.6np1()`](https://robinhankin.github.io/magic/reference/panmagic.6npm1.md)
+  [`panmagic.6nm1()`](https://robinhankin.github.io/magic/reference/panmagic.6npm1.md)
+  [`panmagic.4n()`](https://robinhankin.github.io/magic/reference/panmagic.6npm1.md)
+  : Panmagic squares of order 4n, 6n+1 and 6n-1
+- [`panmagic.8()`](https://robinhankin.github.io/magic/reference/panmagic.8.md)
+  : Panmagic squares of order 8
+- [`perfectcube5`](https://robinhankin.github.io/magic/reference/perfectcube5.md)
+  : A perfect magic cube of order 5
+- [`perfectcube6`](https://robinhankin.github.io/magic/reference/perfectcube6.md)
+  : A perfect cube of order 6
+- [`process()`](https://robinhankin.github.io/magic/reference/process.md)
+  : Force index arrays into range
+- [`recurse()`](https://robinhankin.github.io/magic/reference/recurse.md)
+  : Recursively apply a permutation
+- [`sam()`](https://robinhankin.github.io/magic/reference/sam.md) :
+  Sparse antimagic squares
+- [`shift()`](https://robinhankin.github.io/magic/reference/shift.md)
+  [`ashift()`](https://robinhankin.github.io/magic/reference/shift.md) :
+  Shift origin of arrays and vectors
+- [`strachey()`](https://robinhankin.github.io/magic/reference/strachey.md)
+  : Strachey's algorithm for magic squares
+- [`subsums()`](https://robinhankin.github.io/magic/reference/subsums.md)
+  : Sums of submatrices
+- [`transf()`](https://robinhankin.github.io/magic/reference/transf.md)
+  : Frenicle's equivalent magic squares
+
