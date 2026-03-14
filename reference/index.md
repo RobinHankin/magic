@@ -93,7 +93,7 @@
   [`is.alicehypercube()`](https://robinhankin.github.io/magic/reference/is.magichypercube.md)
   : magic hypercubes
 - [`is.ok()`](https://robinhankin.github.io/magic/reference/is.ok.md) :
-  does a vector have the sum required to be a row or column of a magic
+  Does a vector have the sum required to be a row or column of a magic
   square?
 - [`is.square.palindromic()`](https://robinhankin.github.io/magic/reference/is.square.palindromic.md)
   [`is.centrosymmetric()`](https://robinhankin.github.io/magic/reference/is.square.palindromic.md)

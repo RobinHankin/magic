@@ -1,4 +1,4 @@
-# does a vector have the sum required to be a row or column of a magic square?
+# Does a vector have the sum required to be a row or column of a magic square?
 
 Returns `TRUE` if and only if `sum(vec)==magic.constant(n,d=d))`
 
