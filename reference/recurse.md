@@ -35,6 +35,7 @@ Robin K. S. Hankin
 ## Examples
 
 ``` r
+
 n <- 15
 noquote(recurse(start=letters[1:n],perm=shift(1:n),i=0))
 #>  [1] a b c d e f g h i j k l m n o

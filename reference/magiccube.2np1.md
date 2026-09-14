@@ -29,6 +29,7 @@ Robin K. S. Hankin
 ## Examples
 
 ``` r
+
 #try with m=3, n=2*3+1=7:
 
 m <-7                     

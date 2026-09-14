@@ -15,6 +15,7 @@ You can install the released version of `magic` from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 # install.packages("magic")  # uncomment this to install the package
 library("magic")
 ```

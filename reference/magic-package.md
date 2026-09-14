@@ -27,6 +27,7 @@ Maintainer: Robin K. S. Hankin \<hankin.robin@gmail.com\>
 ## Examples
 
 ``` r
+
 magic(6)
 #>      [,1] [,2] [,3] [,4] [,5] [,6]
 #> [1,]    7    6   35   34   15   14
